@@ -1,0 +1,5 @@
+colour palette
+F3F3E0-light grey like white
+133E87-navy blue
+608BC1-lighter blue
+CBDCEB-very lightblue
