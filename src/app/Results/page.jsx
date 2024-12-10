@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import img4 from "../resources/img4.png";
 import Link from "next/link";
-
+import img7 from '../resources/im7.png'
 export default function BmiResults() {
   const [bmiData, setBmiData] = useState(null);
 
@@ -43,10 +43,10 @@ export default function BmiResults() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen font-title gap-4">
+    <div className="flex flex-col justify-center items-center min-h-screen font-title gap-2 bg-contain" style={{backgroundImage:`url(${img7.src})`}} >
      <div className="flex flex-col justify-center items-center gap-1">
-      <Image src={img4} alt="Results" width={300} height={300} />
-      <h1 className="text-3xl font-semibold">BMI Results</h1>
+      <Image src={img4} alt="Results" width={400} height={400} />
+      <h1 className="text-3xl font-semibold ">BMI Results</h1>
       <h2 className="text-xl">Your BMI is: <span className="text-4xl font-medium text-purple-950">{genderAdjustedBmi}</span></h2>
       <p>Category:  <span className="text-purple-600">{category}</span></p>
       </div>

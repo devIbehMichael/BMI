@@ -4,14 +4,15 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import img2 from "../resources/img2.png"; // Male image
 import img3 from "../resources/img3.png"; // Female image
-
+import img6 from "../resources/img6.png";
 export default function Home() {
+  
   const [weight, setWeight] = useState("");
   const [weightUnit, setWeightUnit] = useState("kg"); // Default weight unit
   const [height, setHeight] = useState("");
   const [heightUnit, setHeightUnit] = useState("m"); // Default height unit
   const [age, setAge] = useState("");
-  const [gender, setGender] = useState(null);
+  const [gender, setGender] = useState('male');
   const router = useRouter();
 
   const handleCalculate = (e) => {
@@ -38,7 +39,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col gap-2 justify-center items-center min-h-screen">
+    <div className="flex flex-col gap-2 justify-center items-center min-h-screen"    style={{ backgroundImage: `url(${img6.src})` }}>
       <h1 className="text-5xl font-semibold font-title">BMI Calculator</h1>
       <form onSubmit={handleCalculate}>
         <div className="flex flex-col gap-4 items-center">
@@ -50,7 +51,7 @@ export default function Home() {
               width={200}
               height={200}
               onClick={() => setGender("male")}
-              className={` ${gender === "male" ? "bg-[#0c205a] rounded-3xl" : ""}`}
+              className={` ${gender === "male" ? "bg-[#0c205a] rounded-3xl shadow-lg" : ""}`}
             />
             <Image
               src={img2}
@@ -58,7 +59,7 @@ export default function Home() {
               width={200}
               height={200}
               onClick={() => setGender("female")}
-              className={` ${gender === "female" ? "bg-[#0c205a] rounded-3xl" : ""}`}
+              className={` ${gender === "female" ? "bg-[#0c205a] rounded-3xl shadow-lg" : ""}`}
             />
           </div>
 
@@ -70,12 +71,12 @@ export default function Home() {
                 value={weight}
                 onChange={(e) => setWeight(e.target.value)}
                 required
-                className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl"
+                className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl shadow-lg"
               />
               <select
                 value={weightUnit}
                 onChange={(e) => setWeightUnit(e.target.value)}
-                className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl"
+                className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl shadow-lg"
               >
                 <option value="kg">kg</option>
                 <option value="lbs">lbs</option>
@@ -92,12 +93,12 @@ export default function Home() {
                 value={height}
                 onChange={(e) => setHeight(e.target.value)}
                 required
-                className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl"
+                className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl shadow-lg"
               />
               <select
                 value={heightUnit}
                 onChange={(e) => setHeightUnit(e.target.value)}
-                className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl"
+                className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl shadow-lg"
               >
                 <option value="m">m</option>
                 <option value="ft">ft</option>
@@ -105,19 +106,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-2xl">
+          <div className="text-2xl space-x-7">
             <label className="font-title">Age:</label>
             <input
               type="number"
               value={age}
               onChange={(e) => setAge(e.target.value)}
               required
-              className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl"
+              className="border-2 border-blue-500 rounded-2xl px-4 py-3 text-2xl shadow-lg"
             />
           </div>
           <button
             type="submit"
-            className="px-12 py-6 bg-[#0c205a] rounded-lg my-4 text-2xl text-white font-title"
+            className="px-12 py-6 bg-[#0c205a] rounded-xl my-4 text-2xl text-white font-title shadow-lg"
           >
             Calculate BMI
           </button>

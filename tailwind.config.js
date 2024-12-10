@@ -17,7 +17,12 @@ module.exports = {
       fontFamily:{
         title:[
           'Montserrat', 'serif'
+          
+
         ]
+      },
+      backgroundImage: {
+        'img': "url('/resources/img6')",
       }
     },
   },

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import Link from 'next/link'
+import Link from 'next/link';
+import img9 from '../resources/img9.png'
 export default function HealthTips() {
   const [bmiData, setBmiData] = useState(null);
 
@@ -72,7 +73,9 @@ export default function HealthTips() {
   const tips = generateTips();
 
   return (
-    <div className="flex flex-col justify-center items-center font-title gap-8  min-h-screen">
+    
+    <div className="flex flex-col justify-center items-center font-title gap-8  min-h-screen border-2 border-gray bg-white bg-cover "  style={{ backgroundImage: `url(${img9.src})` }}>
+      
       <h1 className="text-4xl font-bold text-6xl">Health Tips</h1>
       <div className="flex flex-col justify-center items-center  lg:w-3/5">
        
