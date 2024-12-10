@@ -12,8 +12,8 @@ export default function Home() {
       className="flex flex-col gap-5 justify-center items-center min-h-screen font-title bg-cover bg-no-repeat bg-center shadow-lg"
       style={{ backgroundImage: `url(${img6.src})` }}
     >
-      <Image src={img1} alt="BMI Calculator" width={400} height={300} />
-      <h1 className="text-3xl font-semibold lg:text-5xl">
+      <Image src={img1} alt="BMI Calculator" width={300} height={300} />
+      <h1 className="text-3xl font-semibold lg:text-4xl">
         Welcome to the BMI Calculator!
       </h1>
       <h3 className="text-2xl w-3/5 text-center lg:text-3xl">

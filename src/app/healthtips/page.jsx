@@ -74,19 +74,19 @@ export default function HealthTips() {
 
   return (
     
-    <div className="flex flex-col justify-center items-center font-title gap-8  min-h-screen border-2 border-gray bg-white bg-cover "  style={{ backgroundImage: `url(${img9.src})` }}>
+    <div className="flex flex-col justify-center items-center font-title gap-3  min-h-screen border-2 border-gray bg-white bg-cover "  style={{ backgroundImage: `url(${img9.src})` }}>
       
-      <h1 className="text-4xl font-bold text-6xl">Health Tips</h1>
+      <h1 className=" font-bold text-4xl">Health Tips</h1>
       <div className="flex flex-col justify-center items-center  lg:w-3/5">
        
-        <ul className="flex flex-col justify-center list-decimal list-inside w-4/5 gap-2 text-2xl">
+        <ul className="flex flex-col justify-center list-decimal list-inside w-4/5 gap-2 text-xl">
           {tips.map((tip, index) => (
             <li key={index} className="">{tip}</li>
           ))}
         </ul>
       </div>
 <Link href="/input"><button
-        className=" p-4 bg-blue-600 rounded-xl text-white text-2xl"
+        className=" p-2 bg-blue-600 rounded-xl text-white text-xl"
       >
         Back to Calculator
       </button></Link>

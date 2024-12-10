@@ -43,26 +43,26 @@ export default function BmiResults() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen font-title gap-2 bg-contain" style={{backgroundImage:`url(${img7.src})`}} >
+    <div className="flex flex-col justify-center items-center min-h-screen font-title gap-1 bg-contain" style={{backgroundImage:`url(${img7.src})`}} >
      <div className="flex flex-col justify-center items-center gap-1">
-      <Image src={img4} alt="Results" width={400} height={400} />
-      <h1 className="text-3xl font-semibold ">BMI Results</h1>
-      <h2 className="text-xl">Your BMI is: <span className="text-4xl font-medium text-purple-950">{genderAdjustedBmi}</span></h2>
+      <Image src={img4} alt="Results" width={280} height={280} />
+      <h1 className="text-xl font-semibold ">BMI Results</h1>
+      <h2 className="text-xl">Your BMI is: <span className="text-3xl font-medium text-purple-950">{genderAdjustedBmi}</span></h2>
       <p>Category:  <span className="text-purple-600">{category}</span></p>
       </div>
-      <p className="text-xl text-center max-w-lg mt-4">{advice}</p>
+      <p className="text-lg text-center max-w-lg mt-4">{advice}</p>
 
       <div className="flex gap-3 mt-6">
         <Link href="/input">
         <button
-          className="border-2 border-gray-500 p-3 bg-purple-400 rounded-2xl text-2xl"
+          className="border-2 border-gray-500 p-3 bg-purple-400 rounded-2xl text-xl"
         >
           Recalculate
         </button>
         </Link>
         <Link href='/healthtips'>
         <button
-          className="border-2 border-gray-950 bg-purple-950 text-white rounded-2xl text-2xl p-3"
+          className="border-2 border-gray-950 bg-purple-950 text-white rounded-2xl text-xl p-3"
         >
           Health Tips
         </button></Link>
