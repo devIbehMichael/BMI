@@ -70,7 +70,7 @@ export default function Home() {
                 value={weight}
                 onChange={(e) => setWeight(e.target.value)}
                 required
-                className="border-2 border-blue-500 rounded-lg px-2 py-1 text-2xl shadow-lg"
+                className="border-2 border-blue-500 rounded-lg px-2 py-1 text-2xl shadow-lg w-[45vw]"
               />
               <select
                 value={weightUnit}
@@ -92,7 +92,8 @@ export default function Home() {
                 value={height}
                 onChange={(e) => setHeight(e.target.value)}
                 required
-                className="border-2 border-blue-500 rounded-lg px-2 py-1 text-2xl shadow-lg"
+                className="border-2 border-blue-500 rounded-lg px-2 py-1 text-2xl shadow-lg w-[45vw]"
+
               />
               <select
                 value={heightUnit}
@@ -111,7 +112,7 @@ export default function Home() {
               value={age}
               onChange={(e) => setAge(e.target.value)}
               required
-              className="border-2 border-blue-500 rounded-lg px-2 py-1 text-2xl shadow-lg"
+              className="border-2 border-blue-500 rounded-lg px-2 py-1 text-2xl shadow-lg w-[45vw]"
             />
           </div>
 

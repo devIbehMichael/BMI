@@ -13,10 +13,10 @@ export default function Home() {
       style={{ backgroundImage: `url(${img6.src})` }}
     >
       <Image src={img1} alt="BMI Calculator" width={300} height={300} />
-      <h1 className="text-3xl font-semibold lg:text-4xl">
+      <h1 className="text-3xl font-semibold  text-center lg:text-4xl">
         Welcome to the BMI Calculator!
       </h1>
-      <h3 className="text-2xl w-3/5 text-center lg:text-3xl">
+      <h3 className="text-2xl w-[90%] text-center lg:text-3xl">
         Quickly calculate your Body Mass Index and learn more about your weight
       </h3>
       <Link href="/input">
